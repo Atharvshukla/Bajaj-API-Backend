@@ -2,7 +2,7 @@ import express from "express";
 
 const router = express.Router();
 
-router.post("/process-data", (req, res) => {
+router.post("/bfhl", (req, res) => {
   const data = req.body.data || [];
   
   // Extract numbers and alphabets
@@ -26,7 +26,7 @@ router.post("/process-data", (req, res) => {
   res.json(response);
 });
 
-router.get("/process-data", (req, res) => {
+router.get("/bfhl", (req, res) => {
   const operation_code = {
     operation_code: "some_code" // Replace with your logic if needed
   };
